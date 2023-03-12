@@ -1,76 +1,284 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Cheat sheet</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <h1>Cheat Sheet</h1>
-            <nav>
-                <a class="button"  href="index.html">Home</a>
-                <a class="button"  href="microbit.html">I ♥ Micro:bit</a>
-                <a class="button" href="game.html">Eind project</a>
-                <a class="button"  href="https://curio.itslearning.com" target="_blank">itslearning</a>
-            </nav>
-        </header>
-        <main>
-            <h2>Micro:bit Cheat Sheet</h2>
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Zoek voor micro:bit blokken" title="Type in a name">
-            <ul id="myUL" style="line-height:150%">
-                <li><h3 href="#">Forever:</h3> <p href="#">Dit is een commando dat de micro:bit vertelt om een blok code of functie continu uit te voeren, totdat het programma wordt gestopt of de stroom wordt uitgeschakeld.</p></li>
-                <li><h3 href="#">leds:</h3> <p href="#">Dit commando wordt gebruikt om een patroon of ontwerp weer te geven met behulp van de LED's op de micro:bit. Je kunt dit commando gebruiken om een aangepaste animatie te maken of een specifieke boodschap weer te geven.</p> </li>
-                <li><h3 href="#">On shake:</h3> <p href="#">Dit commando wordt gebruikt om te detecteren wanneer de micro:bit wordt geschud. Je kunt dit commando gebruiken om een bepaalde actie of gebeurtenis te activeren wanneer het apparaat wordt geschud.</p></li>
-                <li><h3 href="#">Show number:</h3> <p href="#"> Dit commando wordt gebruikt om een getal weer te geven op de LED's van de micro:bit. Je kunt dit commando gebruiken om het resultaat van een berekening weer te geven of een waarde te tonen die in de tijd verandert.</p></li>
-                <li><h3 href="#">Pick random:</h3> <p href="#">Dit commando wordt gebruikt om een willekeurig getal binnen een bepaald bereik te genereren. Je kunt dit commando gebruiken om een spel te maken of een willekeurige waarde te genereren voor een experiment.</p></li>
-                <li><h3 href="#">Loops:</h3> <p href="#">Loops worden gebruikt om een blok code een bepaald aantal keren te herhalen of totdat aan een bepaalde voorwaarde is voldaan. Er zijn verschillende soorten loops in micro:bit, waaronder de "for" loop, de "while" loop en de "repeat" loop.</p></li>
-                <li><h3 href="#">For index:</h3> <p href="#"> Dit type loop wordt gebruikt om een blok code een specifiek aantal keren te herhalen. Je kunt deze loop gebruiken wanneer je weet hoe vaak je een blok code wilt herhalen.</p></li>
-                <li><h3 href="#">While:</h3> <p href="#">Dit type loop wordt gebruikt om een blok code te herhalen zolang een bepaalde voorwaarde waar is. Je kunt deze loop gebruiken wanneer je een blok code wilt herhalen totdat aan een specifieke voorwaarde is voldaan.</p></li>
-                <li><h3 href="#">Repeat … times:</h3> <p href="#"> Dit commando wordt gebruikt om een blok code een bepaald aantal keren te herhalen. Je kunt dit commando gebruiken om een loop te maken die een bepaald aantal keren wordt herhaald.</p></li>
-                <li><h3 href="#">For element value of:</h3> <p href="#"> Dit type loop wordt gebruikt om een blok code voor elk element in een lijst of array te herhalen. Je kunt deze loop gebruiken wanneer u dezelfde bewerking op elk element in een lijst wilt uitvoeren.</p></li>
-                <li><h3 href="#">Set…to…:</h3> <p href="#"> Dit commando wordt gebruikt om een waarde toe te kennen aan een variabele. Je kunt dit commando gebruiken om de waarde van een variabele in te stellen.</p></li>
-                <li><h3 href="#">Array:</h3> <p href="#"> Een array is een lijst of verzameling van waarden die in de code kunnen worden gebruikt. Je kunt arrays gebruiken om meerdere waarden op te slaan en te bewerken.</p></li>
-                <li><h3 href="#">If:</h3> <p href="#"> Dit is een commando dat wordt gebruikt om een bepaalde actie uit te voeren als aan een bepaalde voorwaarde is voldaan.</li>
-                <li><h3 href="#">Else:</h3> <p href="#">Dit is een commando dat wordt gebruikt als een alternatief voor de "if" -voorwaarde. Als de voorwaarde van de "if" niet waar is, kan de code in de "else" -sectie worden uitgevoerd.</p></li>
-                <li><h3 href="#">For element value of:</h3> <p href="#"> Dit type loop wordt gebruikt om een blok code voor elk element in een lijst of array te herhalen. Je kunt deze loop gebruiken wanneer u dezelfde bewerking op elk element in een lijst wilt uitvoeren.</p></li>
-                <li><h3 href="#">For element value of</h3> <p href="#">Dit type loop wordt gebruikt om een blok code voor elk element in een lijst of array te herhalen. Je kunt deze loop gebruiken wanneer u dezelfde bewerking op elk element in een lijst wilt uitvoeren.</p></li>
-                <li><h3 href="#">Set…to…</h3> <p href="#">Dit commando wordt gebruikt om een waarde toe te kennen aan een variabele. Je kunt dit commando gebruiken om de waarde van een variabele in te stellen.</p></li>
-                <li><h3 href="#">Array</h3> <p href="#">Een array is een lijst of verzameling van waarden die in de code kunnen worden gebruikt. Je kunt arrays gebruiken om meerdere waarden op te slaan en te bewerken.</p></li>
-                <li><h3 href="#">If</h3> <p href="#">Dit is een commando dat wordt gebruikt om een bepaalde actie uit te voeren als aan een bepaalde voorwaarde is voldaan.</p></li>
-                <li><h3 href="#">Else</h3> <p href="#">Dit is een commando dat wordt gebruikt als een alternatief voor de "if" -voorwaarde. Als de voorwaarde van de "if" niet waar is, kan de code in de "else" -sectie worden uitgevoerd.</p></li>
-                <li><h3 href="#">Else-if</h3> <p href="#">Dit is een commando dat wordt gebruikt wanneer u meerdere voorwaarden wilt controleren. Als de voorwaarde van de "if" niet waar is, kan de code in de "else-if" -sectie worden uitgevoerd.</p></li>
-                <li><h3 href="#">Variabelen</h3> <p href="#">Een variabele is een container die waarden kan opslaan die in de code kunnen worden gebruikt. Je kunt variabelen gebruiken om waarden op te slaan en te bewerken die in de code worden gebruikt.</p></li>
-                <li><h3 href="#">Datatypen</h3> <p href="#">Een datatype is een type gegevens dat kan worden opgeslagen in een variabele. Micro:bit ondersteunt verschillende datatypen, waaronder strings, floats, integers, doubles en booleans.</p></li>
-                <li><h3 href="#">String</h3> <p href="#">Een string is een datatype dat wordt gebruikt om tekst op te slaan. Je kunt strings gebruiken om berichten weer te geven op de micro:bit LED's of om tekstgegevens op te slaan.</p></li>
-                <li><h3 href="#">Float</h3> <p href="#">Een float is een datatype dat wordt gebruikt om decimale getallen op te slaan. Je kunt floats gebruiken voor nauwkeurige berekeningen die decimalen vereisen.</p></li>
-                <li><h3 href="#">Integer</h3> <p href="#">Een integer is een datatype dat wordt gebruikt om gehele getallen op te slaan. Je kunt integers gebruiken voor berekeningen die alleen hele getallen vereisen.</p></li>
-                <li><h3 href="#">Double</h3> <p href="#">Een double is een datatype dat wordt gebruikt om grote decimale getallen op te slaan. Je kunt doubles gebruiken voor nauwkeurige berekeningen die grote getallen vereisen.</p></li>
-                <li><h3 href="#">Boolean</h3> <p href="#">Een boolean is een datatype dat waar of onwaar (true of false) kan zijn. Je kunt booleans gebruiken voor beslissingslogica in de code, zoals het bepalen van welke actie moet worden ondernomen op basis van een bepaalde voorwaarde.</p></li>
-            </ul>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cheat sheet</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cheat Sheet</h1>
+      <nav>
+        <a class="button" href="index.html">Home</a>
+        <a class="button" href="microbit.html">I ♥ Micro:bit</a>
+        <a class="button" href="game.html">Eind project</a>
+        <a class="button" href="https://curio.itslearning.com" target="_blank"
+          >itslearning</a
+        >
+      </nav>
+    </header>
+    <main>
+      <h2>Micro:bit Cheat Sheet</h2>
+      <input
+        type="text"
+        id="myInput"
+        onkeyup="myFunction()"
+        placeholder="Zoek voor micro:bit blokken"
+        title="Type in a name"
+      />
+      <ul id="myUL" style="line-height: 150%">
+        <li>
+          <h3 href="#">Forever:</h3>
+          <p href="#">
+            Dit is een commando dat de micro:bit vertelt om een blok code of
+            functie continu uit te voeren, totdat het programma wordt gestopt of
+            de stroom wordt uitgeschakeld.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">leds:</h3>
+          <p href="#">
+            Dit commando wordt gebruikt om een patroon of ontwerp weer te geven
+            met behulp van de LED's op de micro:bit. Je kunt dit commando
+            gebruiken om een aangepaste animatie te maken of een specifieke
+            boodschap weer te geven.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">On shake:</h3>
+          <p href="#">
+            Dit commando wordt gebruikt om te detecteren wanneer de micro:bit
+            wordt geschud. Je kunt dit commando gebruiken om een bepaalde actie
+            of gebeurtenis te activeren wanneer het apparaat wordt geschud.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">Show number:</h3>
+          <p href="#">
+            Dit commando wordt gebruikt om een getal weer te geven op de LED's
+            van de micro:bit. Je kunt dit commando gebruiken om het resultaat
+            van een berekening weer te geven of een waarde te tonen die in de
+            tijd verandert.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">Pick random:</h3>
+          <p href="#">
+            Dit commando wordt gebruikt om een willekeurig getal binnen een
+            bepaald bereik te genereren. Je kunt dit commando gebruiken om een
+            spel te maken of een willekeurige waarde te genereren voor een
+            experiment.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">Loops:</h3>
+          <p href="#">
+            Loops worden gebruikt om een blok code een bepaald aantal keren te
+            herhalen of totdat aan een bepaalde voorwaarde is voldaan. Er zijn
+            verschillende soorten loops in micro:bit, waaronder de "for" loop,
+            de "while" loop en de "repeat" loop.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">For index:</h3>
+          <p href="#">
+            Dit type loop wordt gebruikt om een blok code een specifiek aantal
+            keren te herhalen. Je kunt deze loop gebruiken wanneer je weet hoe
+            vaak je een blok code wilt herhalen.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">While:</h3>
+          <p href="#">
+            Dit type loop wordt gebruikt om een blok code te herhalen zolang een
+            bepaalde voorwaarde waar is. Je kunt deze loop gebruiken wanneer je
+            een blok code wilt herhalen totdat aan een specifieke voorwaarde is
+            voldaan.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">Repeat … times:</h3>
+          <p href="#">
+            Dit commando wordt gebruikt om een blok code een bepaald aantal
+            keren te herhalen. Je kunt dit commando gebruiken om een loop te
+            maken die een bepaald aantal keren wordt herhaald.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">For element value of:</h3>
+          <p href="#">
+            Dit type loop wordt gebruikt om een blok code voor elk element in
+            een lijst of array te herhalen. Je kunt deze loop gebruiken wanneer
+            u dezelfde bewerking op elk element in een lijst wilt uitvoeren.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">Set…to…:</h3>
+          <p href="#">
+            Dit commando wordt gebruikt om een waarde toe te kennen aan een
+            variabele. Je kunt dit commando gebruiken om de waarde van een
+            variabele in te stellen.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">Array:</h3>
+          <p href="#">
+            Een array is een lijst of verzameling van waarden die in de code
+            kunnen worden gebruikt. Je kunt arrays gebruiken om meerdere waarden
+            op te slaan en te bewerken.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">If:</h3>
+          <p href="#">
+            Dit is een commando dat wordt gebruikt om een bepaalde actie uit te
+            voeren als aan een bepaalde voorwaarde is voldaan.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">Else:</h3>
+          <p href="#">
+            Dit is een commando dat wordt gebruikt als een alternatief voor de
+            "if" -voorwaarde. Als de voorwaarde van de "if" niet waar is, kan de
+            code in de "else" -sectie worden uitgevoerd.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">For element value of:</h3>
+          <p href="#">
+            Dit type loop wordt gebruikt om een blok code voor elk element in
+            een lijst of array te herhalen. Je kunt deze loop gebruiken wanneer
+            u dezelfde bewerking op elk element in een lijst wilt uitvoeren.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">For element value of</h3>
+          <p href="#">
+            Dit type loop wordt gebruikt om een blok code voor elk element in
+            een lijst of array te herhalen. Je kunt deze loop gebruiken wanneer
+            u dezelfde bewerking op elk element in een lijst wilt uitvoeren.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">Set…to…</h3>
+          <p href="#">
+            Dit commando wordt gebruikt om een waarde toe te kennen aan een
+            variabele. Je kunt dit commando gebruiken om de waarde van een
+            variabele in te stellen.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">Array</h3>
+          <p href="#">
+            Een array is een lijst of verzameling van waarden die in de code
+            kunnen worden gebruikt. Je kunt arrays gebruiken om meerdere waarden
+            op te slaan en te bewerken.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">If</h3>
+          <p href="#">
+            Dit is een commando dat wordt gebruikt om een bepaalde actie uit te
+            voeren als aan een bepaalde voorwaarde is voldaan.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">Else</h3>
+          <p href="#">
+            Dit is een commando dat wordt gebruikt als een alternatief voor de
+            "if" -voorwaarde. Als de voorwaarde van de "if" niet waar is, kan de
+            code in de "else" -sectie worden uitgevoerd.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">Else-if</h3>
+          <p href="#">
+            Dit is een commando dat wordt gebruikt wanneer u meerdere
+            voorwaarden wilt controleren. Als de voorwaarde van de "if" niet
+            waar is, kan de code in de "else-if" -sectie worden uitgevoerd.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">Variabelen</h3>
+          <p href="#">
+            Een variabele is een container die waarden kan opslaan die in de
+            code kunnen worden gebruikt. Je kunt variabelen gebruiken om waarden
+            op te slaan en te bewerken die in de code worden gebruikt.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">Datatypen</h3>
+          <p href="#">
+            Een datatype is een type gegevens dat kan worden opgeslagen in een
+            variabele. Micro:bit ondersteunt verschillende datatypen, waaronder
+            strings, floats, integers, doubles en booleans.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">String</h3>
+          <p href="#">
+            Een string is een datatype dat wordt gebruikt om tekst op te slaan.
+            Je kunt strings gebruiken om berichten weer te geven op de micro:bit
+            LED's of om tekstgegevens op te slaan.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">Float</h3>
+          <p href="#">
+            Een float is een datatype dat wordt gebruikt om decimale getallen op
+            te slaan. Je kunt floats gebruiken voor nauwkeurige berekeningen die
+            decimalen vereisen.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">Integer</h3>
+          <p href="#">
+            Een integer is een datatype dat wordt gebruikt om gehele getallen op
+            te slaan. Je kunt integers gebruiken voor berekeningen die alleen
+            hele getallen vereisen.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">Double</h3>
+          <p href="#">
+            Een double is een datatype dat wordt gebruikt om grote decimale
+            getallen op te slaan. Je kunt doubles gebruiken voor nauwkeurige
+            berekeningen die grote getallen vereisen.
+          </p>
+        </li>
+        <li>
+          <h3 href="#">Boolean</h3>
+          <p href="#">
+            Een boolean is een datatype dat waar of onwaar (true of false) kan
+            zijn. Je kunt booleans gebruiken voor beslissingslogica in de code,
+            zoals het bepalen van welke actie moet worden ondernomen op basis
+            van een bepaalde voorwaarde.
+          </p>
+        </li>
+      </ul>
 
-            <script>
-                function myFunction() {
-                    var input, filter, ul, li, p, h3, i, txtValue;
-                    input = document.getElementById("myInput");
-                    filter = input.value.toUpperCase();
-                    ul = document.getElementById("myUL");
-                    li = ul.getElementsByTagName("li");
-                    for (i = 0; i < li.length; i++) {
-                        h3 = li[i].getElementsByTagName("h3")[0];
-                        p = li[i].getElementsByTagName("p")[0];
-                        txtValue = h3.textContent || h3.innerText;
-                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                            li[i].style.display = "";
-                        } else {
-                            li[i].style.display = "none";
-                        }
-                    }
-                }
-            </script>
-        </main>
-        <footer>
-            <p>&copy; by Rick van Rijsewijk, 2023</p>
-        </footer>
-    </body>
+      <script>
+        function myFunction() {
+          var input, filter, ul, li, p, h3, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+            h3 = li[i].getElementsByTagName("h3")[0];
+            p = li[i].getElementsByTagName("p")[0];
+            txtValue = h3.textContent || h3.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+      </script>
+    </main>
+    <footer>
+      <p>&copy; by Rick van Rijsewijk, 2023</p>
+    </footer>
+  </body>
 </html>
