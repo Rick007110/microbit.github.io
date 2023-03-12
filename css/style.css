@@ -86,6 +86,10 @@ p {
     margin-bottom: 12px;
     margin-left: 25%;
   }
+
+input {
+        background-color: #454a4d;
+}
   
   #myUL {
     list-style-type: none;
