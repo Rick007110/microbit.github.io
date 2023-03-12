@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Drippy;
+    src: url("font/Drippy.ttf");
+}
+  
+@font-face {
+    font-family: School;
+    src: url('font/School.ttf')
+}
+  
+@font-face {
+    font-family: sf_archery_blackoblique;
+    src: url('font/SF_Archery_Black_Oblique-webfont.woff');
+}
+  
+@keyframes rgbText1 {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    35%  {background-color: purple;}
+    50%  {background-color: blue;}
+    75%  {background-color: green;}
+    100% {background-color: red;}
+}
+
+@keyframes rgbText {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    35%  {color: purple;}
+    50%  {color: blue;}
+    75%  {color: green;}
+    100% {color: red;}
+}
+
+body {
+    background-color: #131516;
+    /* text-align: center; */
+}
+
+h1 {
+    text-align: center;
+    animation-name: rgbText;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+p {
+    text-align: center;
+    text-overflow: clip;
+}
+
+.button {
+    font-family: Drippy;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #424242;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 20px 10px 10px;
+    transition: transform .5s ease-in-out;
+  }
+
+.button:hover {
+    transform: scale(1.5);
+    background-color: #3D3D3D;
+    margin-left: 25px;
+    margin-right: 25px;
+    animation-name: rgbText2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  #myInput {
+    background-image: url('img/searchicon.png');
+    background-position: 10px 12px;
+    background-size:25px;
+    background-repeat: no-repeat;
+    width: 50%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #cccccc;
+    margin-bottom: 12px;
+    margin-left: 25%;
+  }
+  
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li p {
+    border: 1px solid #736b5e;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #202324;
+    padding: 12px;
+    /* border-color:#736b5e; */
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block
+  }
+
+nav {
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+h2, h3, h4, h5, p{
+    color: white;
+}
+
+h3,h2 {
+    text-align: center;
+}
+
+ol {
+    text-align: center;
+    width:1100px;
+    /* list-style-position:inside; */
+}
+  
+li {
+    width: 100%;
+    /* text-align: center; */
+    /* list-style-position:inside; */
+    list-style-type: none;
+}
+
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+
+::-webkit-scrollbar-thumb {
+    color: rgb(173, 166, 156);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
